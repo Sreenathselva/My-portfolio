@@ -1,7 +1,10 @@
 import Card from "../components/Card"
-
+import {useRef} from "react";
+import { Globe } from "../components/Globe";
+import CopyEmailButton from "../components/CopyEmailButton";
 
 const About = () => {
+    const containerRef = useRef(null);
   return (
     <section className="c-space section-spacing">
         <h2>About Me</h2>
@@ -25,32 +28,77 @@ const About = () => {
             </div>
             {/* grid 2 */}
             <div className="grid-default-color grid-2">
-                <div className="flex items-center justify-center w-full h-full">
-                    <p className="flex items-end text-5xl text-gray-500">
-                        CODE IS CRAFT</p>
-                    <Card 
-                    style={{rotate: "15deg", top: "30%", left: "4%"}}
-                     text="GRASP"/>
-                    <Card  style={{rotate: "-25deg", top: "20%", right: "5%"}}
-                     text="SOLID"/>
-                    <Card  style={{rotate: "75deg", top: "30%", left: "20%"}} 
-                    text="DESIGN"/>
-                    <Card  style={{rotate: "90deg", bottom: "10%", left: "40%"}} 
-                    text="DEVELOP"/>
-                    <Card  style={{rotate: "-15deg", bottom: "20%", left: "60%"}}
-                     image="assets/logos/csharp-pink.png"/>
-                    <Card  style={{rotate: "-45deg", top: "50%", right: "6%"}}
-                     image="assets/logos/dotnet-pink.png"/>
-                    <Card  style={{rotate: "-15deg", bottom: "35%", left: "6%"}}
-                     image="assets/logos/blazor-pink.png"/>
-                </div>
-            </div>
+      <div
+        ref={containerRef}
+        className="card-container relative flex items-center justify-center overflow-hidden w-full h-full"
+      >
+        <p className="flex items-end text-5xl text-gray-500">
+          CODE IS CRAFT
+        </p>
+
+        <Card
+          style={{ rotate: "15deg", top: "30%", left: "4%" }}
+          text="GRASP"
+          dragConstraints={containerRef}
+        />
+        <Card
+          style={{ rotate: "-25deg", top: "20%", right: "5%" }}
+          text="SOLID"
+          dragConstraints={containerRef}
+        />
+        <Card
+          style={{ rotate: "75deg", top: "30%", left: "20%" }}
+          text="DESIGN"
+          dragConstraints={containerRef}
+        />
+        <Card
+          style={{ rotate: "90deg", bottom: "10%", left: "40%" }}
+          text="DEVELOP"
+          dragConstraints={containerRef}
+        />
+        <Card
+          style={{ rotate: "-15deg", bottom: "20%", left: "60%" }}
+          image="assets/logos/csharp-pink.png"
+          dragConstraints={containerRef}
+        />
+        <Card
+          style={{ rotate: "-45deg", top: "50%", right: "6%" }}
+          image="assets/logos/dotnet-pink.png"
+          dragConstraints={containerRef}
+        />
+        <Card
+          style={{ rotate: "-15deg", bottom: "35%", left: "6%" }}
+          image="assets/logos/blazor-pink.png"
+          dragConstraints={containerRef}
+        />
+      </div>
+    </div>
             {/* grid 3 */}
-            <div className="grid-black-color grid-3"></div>
+            <div className="grid-black-color grid-3">
+                <div className="z-10 w-[-50%]">
+                  <div className="headtext">Time Zone</div>
+                  <p className="subtext">I'm based in Mars, and open to remote <br /> work worldwide.</p>
+                </div>
+                <figure className="absolute left-[30%] top-[15%]">
+                  <Globe/>
+                </figure>
+            </div>
             {/* grid 4 */}
-            <div className="grid-special-color grid-4"></div>
+            <div className="grid-special-color grid-4">
+              <div className="flex flex-col items-center justify-center 
+              gap-4 size-full">
+                <p className="text-center headtext">
+                  Do you want to start a project together?
+                </p>
+                <CopyEmailButton/>
+              </div>
+            </div>
             {/* grid 5 */}
-            <div className="grid-default-color grid-5"></div>
+            <div className="grid-default-color grid-5">
+              <div className="absolute inset-y-0 md:inset-y-9 w-full
+              h-full start-[50%]
+              md:scale-y-125"></div>
+            </div>
         </div>
     </section>
   )
