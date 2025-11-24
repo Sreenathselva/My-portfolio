@@ -3,6 +3,7 @@ import Navbar from './sections/Navbar.jsx';
 import Hero from './sections/Hero.jsx'
 import About from './sections/About.jsx';
 import Projects from './sections/Projects.jsx';
+import Experiences from './sections/Experiences.jsx';
 function App() {
 
   return (
@@ -10,8 +11,8 @@ function App() {
     <Navbar/>
     <Hero/>
     <About/>
-    <Projects/>
-    <section className='min-h-screen'/>
+    <Projects />
+    <Experiences />
     <section className='min-h-screen'/>
     <section className='min-h-screen'/>
     {/* projects */}
