@@ -15,8 +15,6 @@ function App() {
     <Experiences />
     <section className='min-h-screen'/>
     <section className='min-h-screen'/>
-    {/* projects */}
-    {/* experience */}
     {/* testimonial */}
     {/* contact */}
     {/* footer */}
