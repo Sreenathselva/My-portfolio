@@ -10,7 +10,7 @@ const Project = ({title, description, subDescription,href, image,
    <div className='flex-wrap items-center 
     justify-between space-y-14 py-10 sm:flex sm:space-y-0 '
     onMouseEnter={()=>setPreview(image)}
-    onMouseLeave={()=>setPreview(image)}>
+    onMouseLeave={()=>setPreview(null)}>
     <p className='text-2xl'>{title}</p>
     <div className='flex gap-5 mt-2 text-sand'>
       {tags.map((tag)=>(
