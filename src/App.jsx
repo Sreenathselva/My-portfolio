@@ -4,6 +4,7 @@ import Hero from './sections/Hero.jsx'
 import About from './sections/About.jsx';
 import Projects from './sections/Projects.jsx';
 import Experiences from './sections/Experiences.jsx';
+import Testimonial from './sections/Testimonial.jsx';
 function App() {
 
   return (
@@ -13,7 +14,7 @@ function App() {
     <About/>
     <Projects />
     <Experiences />
-    <section className='min-h-screen'/>
+    <Testimonial />
     <section className='min-h-screen'/>
     {/* testimonial */}
     {/* contact */}
