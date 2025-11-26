@@ -16,6 +16,8 @@ function App() {
     <Experiences />
     <Testimonial />
     <section className='min-h-screen'/>
+    <section className='min-h-screen'/>
+    <section className='min-h-screen'/>
     {/* testimonial */}
     {/* contact */}
     {/* footer */}

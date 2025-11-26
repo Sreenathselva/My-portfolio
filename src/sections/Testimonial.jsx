@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge"
 import { Marquee } from "../components/Marquee"
+import { reviews } from "../constants"
 
 
 const firstRow = reviews.slice(0, reviews.length / 2)
@@ -15,8 +16,6 @@ const ReviewCard = ({
     <figure
       className={twMerge(
         "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-        // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
@@ -35,7 +34,7 @@ const ReviewCard = ({
   )
 }
 
-export function Testimonial() {
+export default function Testimonial() {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
       <Marquee pauseOnHover className="[--duration:20s]">
