@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge"
 
-import { cn } from "@/lib/utils"
+// import { twMerge } from "@/lib/utils"
 
 
 export function Marquee({
@@ -30,7 +30,7 @@ export function Marquee({
         .map((_, i) => (
           <div
             key={i}
-            className={cn("flex shrink-0 justify-around [gap:var(--gap)]", 
+            className={twMerge("flex shrink-0 justify-around [gap:var(--gap)]", 
             //   "": !vertical,
             //   "animate-marquee-vertical flex-col": vertical,
 
