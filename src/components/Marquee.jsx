@@ -18,10 +18,6 @@ export function Marquee({
       className={twMerge(
         `group flex [gap:var(--gap)] overflow-hidden p-2 [--duration:40s] [--gap:1rem]
         ${vertical? "flex-col" : "flex-row"}`,
-        {
-          "flex-row": !vertical,
-          "flex-col": vertical,
-        },
         className
       )}
     >
@@ -34,7 +30,7 @@ export function Marquee({
             //   "": !vertical,
             //   "animate-marquee-vertical flex-col": vertical,
 
-            vertical?"animate-marquee flex-row" : "animate-marquee-vertical flex-col",
+            vertical?"animate-marquee-vertical flex-col":"animate-marquee flex-row" ,
             pauseOnHover && "group-hover:[animation-play-state:paused]",
             reverse && "[animation-direction:reverse]"
             )}
