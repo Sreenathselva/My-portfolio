@@ -5,6 +5,7 @@ import About from './sections/About.jsx';
 import Projects from './sections/Projects.jsx';
 import Experiences from './sections/Experiences.jsx';
 import Testimonial from './sections/Testimonial.jsx';
+import Contact from './sections/Contact.jsx';
 function App() {
 
   return (
@@ -14,8 +15,8 @@ function App() {
     <About/>
     <Projects />
     <Experiences />
-    <Testimonial />
-    <section className='min-h-screen'/>
+    {/* <Testimonial /> */}
+    <Contact/>
     <section className='min-h-screen'/>
     <section className='min-h-screen'/>
     {/* testimonial */}
