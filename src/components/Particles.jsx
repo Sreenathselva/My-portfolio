@@ -8,7 +8,7 @@ import React, {
 
 
 function MousePosition() {
-  const [mousePosition, setMousePosition] = useState<MousePosition>({
+  const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
   })
@@ -274,7 +274,7 @@ export const Particles = ({
 
   return (
     <div
-      className={cn("pointer-events-none", className)}
+      className={twMerge("pointer-events-none", className)}
       ref={canvasContainerRef}
       aria-hidden="true"
       {...props}

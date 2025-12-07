@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
+import { Particles } from "../components/Particles";
 const Contact = () => {
     const [formData, setFormData] = useState({
         name:"",
@@ -54,6 +55,13 @@ const Contact = () => {
   return (
     <section className='relative flex items-center c-space section-spacing'>
         {showAlert&& <Alert type={alertType} text={alertMessage}/>}
+            <Particles
+        className="absolute inset-0 z-0"
+        quantity={100}
+        ease={80}
+        color={"#ffffff"}
+        refresh
+      />
         <div className="flex flex-col items-center 
         max-w-md p-5 mx-auto border border-white/10 rounded-2xl
         bg-primary">

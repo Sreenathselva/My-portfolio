@@ -226,46 +226,50 @@ export const myProjects = [
 export const mySocials = [
   {
     name: "WhatsApp",
-    href: "",
+    href: "https://wa.me/7025684227",
     icon: "/assets/socials/whatsApp.svg",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/selva-sreenath-s-84895a253/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/sreenathselva8/",
     icon: "/assets/socials/instagram.svg",
   },
 ];
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
-    contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
-    ],
-  },
-  {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
-    contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
-    ],
-  },
+  title: "Junior Web Developer",
+  job: "Software Development",
+  date: "2023 - 2025",
+  contents: [
+    "Developed and maintained responsive, user-friendly interfaces using HTML, CSS, and JavaScript.",
+    "Implemented interactive UI components and animations using JavaScript libraries like GSAP, Lenis, and Anime.js.",
+    "Integrated front-end features with PHP and SQL-based back-end systems.",
+    "Optimized websites for speed, performance, and cross-browser compatibility.",
+    "Collaborated with designers to convert UI/UX designs into pixel-perfect web pages.",
+    "Troubleshot and resolved front-end issues to ensure smooth user experience.",
+  ],
+},
+{
+  title: "Web Developer",
+  job: "Software Development",
+  date: "2025 - Present",
+  contents: [
+    "Designed, developed, and maintained responsive web interfaces using React.js, Node.js, HTML, CSS, PHP, and SQL.",
+    "Developed scalable in-house applications and managed multiple event websites.",
+    "Utilized GitHub for version control, CI/CD deployments, and project management.",
+    "Handled deployments, hosting, and configurations via cPanel, including databases, SSL, and domain settings.",
+    "Created interactive and dynamic components using modern JavaScript libraries and smooth-scroll frameworks.",
+    "Integrated RESTful APIs and optimized applications for performance and security.",
+    "Collaborated with teams for feature planning, debugging, and continuous improvement.",
+  ],
+},
+,
   {
     title: "Freelance Developer",
     job: "Self-Employed",
