@@ -21,7 +21,7 @@ const About = () => {
                 <div className="z-10">
                     <p className="headtext">Hi, I'm Selva Sreenath</p>
                     <p className="subtext lg:pb-8 font-xl">
-                        Over the last 4 years, I developed my frontend and backend dev skills to deliver dymnamic and responsive spoftware and web applications.
+                        Over the last 3 years, I developed my frontend and backend dev skills to deliver dymnamic and responsive software and web applications.
                     </p>
                     <div className="absolute inset-x-0 pointer-events-none
                     -bottom-4 h-1/2 sm:h-1/3 bg-linear-to-t  from-indigo"/>

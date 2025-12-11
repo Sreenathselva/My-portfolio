@@ -2,7 +2,8 @@ import { img } from "motion/react-client"
 import { OrbitingCircles } from "./OrbitingCircles"
 
 export function Frameworks() {
-    const skills = ["auth0",
+    const skills = [
+        "auth0",
         "csharp",
         "css3",
         "git",
@@ -13,7 +14,6 @@ export function Frameworks() {
         "dotnet",
         "node.js",
         "typescript",
-        
     ]
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">

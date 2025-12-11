@@ -1,28 +1,14 @@
 import {useState} from 'react';
 import {motion} from "motion/react";
-function Navigation(){
-    return <ul className='nav-ul'>
-        <li className="nav-li">
-            <a className='nav-link' href="#home" >
-                Home
-            </a>
-        </li>
-        <li className="nav-li">
-            <a className='nav-link' href="#about" >
-                About
-            </a>
-        </li>
-        <li className="nav-li">
-            <a className='nav-link' href="#work" >
-                Work
-            </a>
-        </li>
-        <li className="nav-li">
-            <a className='nav-link' href="#contact" >
-                Contact
-            </a>
-        </li>
-    </ul>
+function Navigation({ onClick }) {
+    return (
+        <ul className='nav-ul'>
+            <li><a href="#home" className='nav-link' onClick={onClick}>Home</a></li>
+            <li><a href="#about" className='nav-link' onClick={onClick}>About</a></li>
+            <li><a href="#work" className='nav-link' onClick={onClick}>Work</a></li>
+            <li><a href="#contact" className='nav-link' onClick={onClick}>Contact</a></li>
+        </ul>
+    );
 }
 const Navbar = () =>{
     const [isOpen, setIsOpen] =useState(false);
