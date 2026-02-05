@@ -53,7 +53,7 @@ const Contact = () => {
         // template_7kfkbaq
     }
   return (
-    <section className='relative flex items-center c-space section-spacing'>
+    <section id="contact" className='relative flex items-center c-space section-spacing'>
         {showAlert&& <Alert type={alertType} text={alertMessage}/>}
             <Particles
         className="absolute inset-0 z-0"
